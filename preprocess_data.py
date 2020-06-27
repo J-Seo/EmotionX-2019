@@ -141,8 +141,8 @@ def merge_files(file_path1, file_path2, output_dir, output_file_name):
 def process_EmotionX(friend_data_path, emotionpush_data_path, output_dir, do_sanitize):
     # train & dev
     print("Preprocess train and dev data")
-    friends_train_file, friends_dev_file, friends_smaller_dev_file, friends_train_1, friends_train_2 = preprocess_train_dev(friend_data_path, 'friends.augmented.json', output_dir, do_sanitize)
-    emotionpush_train_file, emotionpush_dev_file, emotionpush_smaller_dev_file, emotionpush_train_1, emotionpush_train_2 = preprocess_train_dev(emotionpush_data_path, 'emotionpush.augmented.json', output_dir, do_sanitize)
+    friends_train_file, friends_dev_file, friends_smaller_dev_file, friends_train_1, friends_train_2 = preprocess_train_dev(friend_data_path, 'friends_train.json', output_dir, do_sanitize)
+    emotionpush_train_file, emotionpush_dev_file, emotionpush_smaller_dev_file, emotionpush_train_1, emotionpush_train_2 = preprocess_train_dev(emotionpush_data_path, 'emotionpush.train.json', output_dir, do_sanitize)
 
     # Combine Friends & EmotionPush
     print("Combine Friends & EmotionPush data")
