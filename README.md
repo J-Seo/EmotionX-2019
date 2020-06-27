@@ -26,7 +26,11 @@ Change 'augmented' = 0
             )
 ```
 
-## Add friends_majority.py, friends_majority_sol.py, friends_others.py, and friends_others_sol.py
+## Add 
+## friends_majority.py 
+## friends_majority_sol.py
+## friends_others.py
+## friends_others_sol.py
 
 # How To Run
 
@@ -108,5 +112,3 @@ Classify one dialogue's emotion label among the joy, sadness, fear, anger, surpr
 ```
 python EmotionX-2019/friends_others_sol.py
 ```
-
-
