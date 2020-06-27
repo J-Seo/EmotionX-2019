@@ -27,11 +27,12 @@ Change 'augmented' = 0
 ```
 
 ## Add 
-## friends_majority.py 
-## friends_majority_sol.py
-## friends_others.py
-## friends_others_sol.py
-
+```
+friends_majority.py 
+friends_majority_sol.py
+friends_others.py
+friends_others_sol.py
+```
 # How To Run
 
 ## Step 1. Install Dependencies
