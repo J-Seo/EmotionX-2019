@@ -301,7 +301,7 @@ class BaseProcessor(DataProcessor):
     
     def get_train_examples(self, data_dir, filename):
         """See base class."""
-        return self._create_examples(os.path.join(data_dir, filename), "train", True)
+        return self._create_examples(os.path.join(data_dir, filename), "train", False)
 
     def get_dev_examples(self, data_dir, filename):
         """See base class."""
@@ -412,10 +412,10 @@ class Majority_OneSentence_Processor(BaseProcessor):
             
         return examples
     
-    def save_dev(self, data_dir, examples, preds):
+    def save_dev(self, data_dir, dev_file, result_file, examples, preds):
         self.save(
-            os.path.join(data_dir, "dev.json"),
-            os.path.join(data_dir, "result_majority_dev.json"),
+            os.path.join(data_dir, dev_file),
+            os.path.join(data_dir, result_file),
             examples,
             preds
             )
