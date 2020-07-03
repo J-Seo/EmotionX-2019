@@ -4,6 +4,13 @@
 
 Forked from [MeenaAlfons/EmotionX-2019](https://github.com/MeenaAlfons/EmotionX-2019) which is based on Bidirectional Encoder Representations from Transformers (BERT). The task includes two datasets with dialogues, only for Orignal Friends and EmotionPush. Each of the two datasets contains English-language dialogues. The order of the emotions in the "emotion" label is "neutral, joy, sadness, fear, anger, surprise, disgust". If the voting score is same such as "annotation":"2000201" among 5 voters, "emotion" label should be "non-neutral".
 
+## Result
+
+Test dataset for Original Friends micro-F1 **53 ~ 56%**
+
+<img src = "https://github.com/J-Seo/EmotionX-2019/blob/master/result_img/Screenshot%20from%202020-07-03%2014-32-48.png">
+
+
 ## Modify list
 
 ## preprocess_data.py
@@ -113,3 +120,4 @@ Classify one dialogue's emotion label among the joy, sadness, fear, anger, surpr
 ```
 python EmotionX-2019/friends_others_sol.py
 ```
+
